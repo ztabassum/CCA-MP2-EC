@@ -4,8 +4,6 @@ import socket
 
 app = Flask(__name__)
 
-seed = 0
-
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
